@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+:root {
+  --main-color: #009688;
+}
+.game {
+  min-height: 100vh;
+  background-color: #d7d6d6;
+}
+
+.game .name {
+  background-color: #0370c7;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+.game .container {
+  margin: 5px 150px;
+  position: relative;
+}
+.game .container .message {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+
+  border-radius: 5px;
+}
+.game .container .message span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.game .container .btn {
+  background-color: var(--main-color);
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 0;
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+.container .the-word {
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+.game .container input {
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px auto;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+.game .container input:focus {
+  outline: none;
+}
+.game .container .upcoming-words {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+.game .upcoming-words div {
+  background-color: var(--main-color);
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 5px;
+  color: white;
+  user-select: none;
+}
+.game .control {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.game .control span {
+  font-weight: bold;
+  color: #009688;
+}
+
+/*finsh game*/
+.finish {
+  text-align: center;
+  margin-top: 30px;
+}
+.finish .good {
+  font-weight: bold;
+  font-size: 40px;
+  color: #009688;
+}
+.finish .bad {
+  font-weight: bold;
+  font-size: 40px;
+  color: red;
+}
+.select-box {
+  background-color: #fbfbfb;
+  color: black;
+  display: block;
+  margin: 5px auto;
+  width: 200px;
+  height: 38px;
+  border-radius: 4px;
+}
+.select-box:focus {
+  outline: none;
+}
+.container .select-box > option {
+  color: black;
+}
+.game .user-instructions {
+  border: 1px solid #0370c7;
+  display: flex;
+  justify-content: space-between;
+
+  /* height: 220px; */
+}
+.game .container .user-instructions > div {
+  padding: 10px;
+}
+.game .container .user-instructions h3 {
+  margin-bottom: 10px;
+}
+.game .container .user-instructions p {
+  line-height: 1.25;
+  margin: 5px;
+}
+.game .container .user-instructions p span {
+  color: var(--main-color);
+  font-weight: bold;
+}

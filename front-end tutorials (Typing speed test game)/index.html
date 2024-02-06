@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="/all.css">
+    <link rel="stylesheet" href="/all.min.css">
+    <link rel="stylesheet" href="/main.css">
+
+  </head>
+  <body>
+ <div class="game">
+  <div class="name">
+    Typing Speed Test Game
+  </div>
+  
+    <select class="select-box" name="levels">
+  
+    <option value="Easy">Easy</option>
+    <option value="Normal">Normal</option>
+    <option value="Hard">Hard</option>
+    </select> 
+  <div class="container">
+<div class="message">
+ <div> you are playing on <span id="lvls">Easy</span> level and you have <span id="seconds">5</span> seconds to type the words</div>
+</div>
+<button class="btn">Start Playing</button>
+<div class="the-word"></div>
+  <input type="text" class="input">
+
+
+<div class="upcoming-words">
+ words coming here
+</div>  
+<div class="control">
+  <div class="time">Time Left: <span id="time-left">5</span> seconds</div>
+  <div class="score">
+    Score <span id="scores">0</span> from <span id="total-words">0</span>
+  </div>
+</div>
+
+<div class="finish">
+</div><div class="user-instructions">
+  <div class="instructions">
+  <h3>Instructions For Typing speed Game.</h3>
+  <p>-you have 3 Levels in this Game.</p>
+  <p>-Every Level has Different Words.</p>
+  <p>-The <span>Easy</span> Level Has small words..each word has 5 seconds to write.</p>
+  <p>-The <span>Normal</span> Level Has intermediate words..each word has 4 seconds to write.</p>
+  <p>-The <span>Hard</span> Level Has long and complex words..each word has 3 seconds to write.</p></div>
+  <div class="starting">
+  <h3>How to start?</h3>
+  <p>- you have to select level first.</p>
+  <p>- after that the game will appears</p>
+  <p>- to begin press start playing </p>
+  <p>- at the end of the box you will see your score and your time left</p>
+  <p>- you have to type each word before the time end or you will lose</p>
+</div>
+</div>
+</div>
+
+ </div>
+   <script src="/main.js" type="module"></script>
+</body>
+</html>
